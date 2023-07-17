@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./CSS/portfolio.css">
+        <meta name="viewport" content="width=device-width" />
+        <title>Nicolas Sloan's Portfolio</title>
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!--Breaks inserted to add space between nav and first heading-->
+        <br>
+        <br>
+
+        <!--Background Video-->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="videos/typing.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--Video Text, quote-->
+        <div class="Video_Text">
+            <h1 class="white-text">Nicolas Sloan's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>A good programmer is someone who always looks both ways before crossing a one-way street.</q>
+                    <br> -Doug Linder
+                    <br>
+                    <br>
+                    Hello there! Welcome to the portfolio of Nicolas Sloan.
+                    <br>
+                    Below you can find a detailed representation of my background and experience.
+                    <br>
+                    <br>
+                    Thank you for dropping by! 
+                    <br>
+                </p>
+            </strong>
+        </div>
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="./images/Nicolas_Sloan.jpeg" alt="Nicolas Sloan">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am a software developer in training at The Tech Academy! 
+                    <br>
+                    <br> As a young student beginning  my career in the tech industry, 
+                    I couldn't be more excited to start working within my passion!
+                    <br>
+                    <br>In my freetime I enjoy playing video games, snowboarding, repairing electronic hardware, and spending quality time with friends and family.
+                </p>
+            </div>
+        </div>
+
+
+        <!--GitHub Section-->
+        <div class="Row" id="GitHub">
+            <!--Left Column,-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    Below is a link to my GitHub profile with details pertaining to my coding projects.
+                    <br>
+                    <p class="center"><a href="https://github.com/NicolasSloan" target="_blank">Nicolas Sloan's GitHub</a></p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/NicolasSloan" target="_blank"><img src="./images/github.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!--Contact section-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_2 Column_tall">
+                <img src="./images/contact.jpg" alt="Contact image">
+            </div>
+            <!--Contact form, right column-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data; leaving blank for now-->
+                <form action="https://formspree.io/f/mnqkqgjq" method="POST">
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!--Footer section-->
+        <footer>
+            <p>
+                <p class="center"> <a href="https://nicolassloan.com" target="_blank">NicolasSloan.com</a></p>
+            </p>
+        </footer>
+    </body>
+</html>
