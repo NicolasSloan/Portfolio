@@ -5,26 +5,44 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="./CSS/portfolio.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width" />
         <title>Nicolas Sloan's Portfolio</title>
     </head>
 
     <!--Body-->
     <body class="Background">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
         <!--Navbar-->
-        <div class="Navbar">
-            <a class="active" href="#Home">Home</a>
-            <a href="#Slideshow">Slideshow</a>
-            <a href="#About">About</a>
-            <a href="#GitHub">GitHub</a>
-
-            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
-        </div>
-
-        <!--Breaks inserted to add space between nav and first heading-->
-        <br>
-        <br>
+        <nav class="navbar sticky-top navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src=".\images\favicon_io\android-chrome-192x192.png" alt="Logo" width="30" height="30">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Slideshow">Slideshow</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#About">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#LearnMore">Learn More</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link contact" onclick="openForm()" ondblclick="closeForm()">Contact</a>
+                  </li>
+              </div>
+            </div>
+          </nav>
 
         <!--Background Video-->
         <div id="Home">
@@ -36,56 +54,60 @@
 
         <!--Video Text, quote-->
         <div class="Video_Text">
-            <h1 class="white-text">Nicolas Sloan's Portfolio</h1>
-            <strong>
-                <p class="center">
-                    <q>A good programmer is someone who always looks both ways before crossing a one-way street.</q>
-                    <br> -Doug Linder
-                    <br>
-                    <br>
-                    Hello there! Welcome to the portfolio of Nicolas Sloan.
-                    <br>
-                    Below you can find a detailed representation of my background and experience.
-                    <br>
-                    <br>
-                    Thank you for dropping by! 
-                    <br>
-                </p>
-            </strong>
+            <div class="container">
+                <h1 class="white-text">Nicolas Sloan's Portfolio</h1>
+                <strong>
+                    <p class="center fs-1">
+                        <br>
+                        <br>
+                        <q>A good programmer is someone who always looks both ways before crossing a one-way street.</q>
+                        <br> -Doug Linder
+                        <br>
+                        <br>
+                        <br>
+                        Hello there! Welcome to the portfolio of Nicolas Sloan.
+                        <br>
+                        Below you can find a detailed representation of my background and experience.
+                        <br>
+                        <br>
+                        Thank you for dropping by! 
+                    </p>
+                </strong>
+            </div>
         </div>
 
         <!-- Slideshow section added-->
-        <div id="Slideshow">
+        <div class="container" id="Slideshow">
             <div id="Slideshow_Background">
                 <div id="Slideshow_Container">
                     <!-- Slide 1 of 6 -->
                     <div class="mySlides fade">
-                        <img src="./images/Nicolas_Sloan2.jpg" alt="Photo of Nicolas Sloan">
+                        <img src="./images/Nicolas_Sloan2.jpg" class="Slideshow_img disabled" alt="Photo of Nicolas Sloan">
                         <div class="text">I'm actively looking for work!</div>
                     </div>
                     <!-- Slide 2 of 6 -->
                     <div class="mySlides fade">
-                        <img src="images/HTML_CSS_and_JavaScript.jpg" alt="HTML, CSS, and JavaScript Logos">
+                        <img src="images/HTML_CSS_and_JavaScript.jpg" class="Slideshow_img disabled" alt="HTML, CSS, and JavaScript Logos">
                         <div class="text">I'm trained in full stack software development, with experience in HTML, CSS, and JavaScript...</div>
                     </div>
                     <!-- Slide 3 of 6 -->
                     <div class="mySlides fade">
-                        <img src="images/Python.png" alt="Python Logo">
+                        <img src="images/Python.png" class="Slideshow_img disabled" alt="Python Logo">
                         <div class="text">Python</div>
                     </div>
                     <!-- Slide 4 of 6 -->
                     <div class="mySlides fade">
-                        <img src="images/C_and_Net.jpg" alt="C# and .Net logos">
+                        <img src="images/C_and_Net.jpg" class="Slideshow_img disabled" alt="C# and .Net logos">
                         <div class="text">C#, .NET Framework, ASP.net, MVC...</div>
                     </div>
                     <!-- Slide 5 of 6 -->
                     <div class="mySlides fade">
-                        <img src="images/SQL_and_Database.jpg" alt="SQL Logo and Database icon">
+                        <img src="images/SQL_and_Database.jpg" class="Slideshow_img disabled" alt="SQL Logo and Database icon">
                         <div class="text">backend development, databases and SQL.</div>
                     </div>
                     <!-- Slide 6 of 6 -->
                     <div class="mySlides fade">
-                        <img src="images/contact.jpg" alt="Contact image">
+                        <img src="images/contact.jpg" class="Slideshow_img disabled" alt="Contact image">
                         <div class="text">Contact me!</div>
                     </div>
                     <!-- Previous and Next button -->
@@ -107,42 +129,84 @@
         </div>
 
         <!--About section-->
-        <div class="Row" id="About">
-            <!--Left column-->
-            <div class="Column_2">
-                <img src="./images/Nicolas_Sloan.jpeg" alt="Nicolas Sloan">
+        <div class="container">
+            <div class="row" id="About">
+                <div class="col bg-dark">
+                    <img src="./images/Nicolas_Sloan.jpeg" style="scale: 85%;" alt="Nicolas Sloan">
+                </div>
+                <div class="col bg-light">
+                    <h1><strong>About</strong></h1>
+                    <p class="fs-2" style="padding: 50px;">
+                        Passionate Full-Stack Software Developer eager to embark on a rewarding career journey! 
+                        Proficient in a versatile array of languages and tools, including HTML/CSS, JavaScript, Python, SQL, C#, and .NET. 
+                        My hands-on experience extends beyond coding – I currently excel as an Electronic Repair Technician, holding certifications from Samsung, Apple, and Google.
+                    </p>
+                </div>
             </div>
-            <!--Right column-->
-            <div class="Column_1">
-                <h1>About</h1>
-                <p>
-                    I am a software developer in training at The Tech Academy! 
-                    <br>
-                    <br> As a young student beginning  my career in the tech industry, 
-                    I couldn't be more excited to start working within my passion!
-                    <br>
-                    <br>In my freetime I enjoy playing video games, snowboarding, repairing electronic hardware, and spending quality time with friends and family.
-                </p>
+          </div>
+          <br>
+
+        <!--GitHub Section
+        <div class="container">
+            <div class="row" id="GitHub">
+                <!--Left Column,
+                <div class="col bg-light">
+                    <h1>GitHub</h1>
+                    <p>
+                        Below is a link to my GitHub profile with details pertaining to my coding projects.
+                        <br>
+                        <p class="center"><a href="https://github.com/NicolasSloan" target="_blank">Nicolas Sloan's GitHub</a></p>
+                    </p>
+                </div>
+                <!--Right column
+                <div class="col bg-dark">
+                    <a href="https://github.com/NicolasSloan" target="_blank"><img src="./images/github.png" style="scale: 85%;" alt="GitHub Logo"></a>
+                </div>
             </div>
         </div>
+        -->
 
-
-        <!--GitHub Section-->
-        <div class="Row" id="GitHub">
-            <!--Left Column,-->
-            <div class="Column_1">
-                <h1>GitHub</h1>
-                <p>
-                    Below is a link to my GitHub profile with details pertaining to my coding projects.
-                    <br>
-                    <p class="center"><a href="https://github.com/NicolasSloan" target="_blank">Nicolas Sloan's GitHub</a></p>
-                </p>
+        <div class="container">
+            <div class="row" id="LearnMore">
+                <div class="col">
+                    <div class="card" style="width: 100%">
+                        <a href="https://github.com/NicolasSloan" target="_blank">
+                            <img src="./images/github.png" style="filter: none;" class="card-img-top" alt="GitHub Logo">
+                        </a>
+                        <div class="card-body">
+                          <h5 class="card-title">GitHub</h5>
+                          <p class="card-text">See my coding projects!</p>
+                          <a href="https://github.com/NicolasSloan" class="btn btn-primary">Go to GitHub</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 100%;">
+                        <a href="https://www.linkedin.com/in/nicolas-sloan" target="_blank">
+                            <img src="./images/LinkedIn.png" style="filter: none;" class="card-img-top" alt="LinkedIn Logo">
+                        </a>
+                        <div class="card-body">
+                          <h5 class="card-title">LinkedIn</h5>
+                          <p class="card-text">See more about me on LinkedIn!</p>
+                          <a href="https://www.linkedin.com/in/nicolas-sloan" class="btn btn-primary">Go to LinkedIn</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 100%">
+                        <a href="https://docs.google.com/document/d/1YTnP0OXxK3jDFYJm5tLW9KwVOHt9n_FDpd7vQ04jB4U/edit?usp=sharing" target="_blank">
+                            <img src="./images/ResumeIcon.png" style="filter: none;" class="card-img-top" alt="Resume Icon">
+                        </a>
+                        <div class="card-body">
+                          <h5 class="card-title">Resume</h5>
+                          <p class="card-text">View my full resume!</p>
+                          <a href="https://docs.google.com/document/d/1YTnP0OXxK3jDFYJm5tLW9KwVOHt9n_FDpd7vQ04jB4U/edit?usp=sharing" class="btn btn-primary">Go to resume</a>
+                        </div>
+                      </div>
+                </div>
             </div>
-            <!--Right column-->
-            <div class="Column_2">
-                <a href="https://github.com/NicolasSloan" target="_blank"><img src="./images/github.png" alt="GitHub Logo"></a>
-            </div>
-        </div>
+          </div>
+          <br>
 
         <!--Contact section-->
         <div class="Row" id="Contact">
